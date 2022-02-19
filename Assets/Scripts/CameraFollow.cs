@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] Vector3 velocity = Vector3.zero;
     [SerializeField] Transform lookTarget;
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         Vector3 dPos = camTarget.position + dist;
         Vector3 sPos = Vector3.SmoothDamp(transform.position, dPos, ref velocity, smoothTime * Time.deltaTime);

@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         HandleInputs();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         HandleMovement();
     }
