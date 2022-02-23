@@ -85,7 +85,6 @@ public class EnemyManager : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(cannonOrigin.position, cannonOrigin.right, out hit, range))
             {
-                print("hey");
                 PlayerController target = hit.transform.GetComponent<PlayerController>();
                 if (target != null)
                 {
