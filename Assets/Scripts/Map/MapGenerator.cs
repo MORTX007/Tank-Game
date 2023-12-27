@@ -38,7 +38,8 @@ public class MapGenerator : MonoBehaviour
     private void Awake()
     {
 		falloffMap = FalloffGenerator.GenerateFalloffMap(mapChunkSize);
-    }
+		DrawMapInEditor();
+	}
 
     public void DrawMapInEditor()
     {
